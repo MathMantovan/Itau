@@ -1,0 +1,6 @@
+@Itau_HostAddress = http://localhost:5283
+
+GET {{Itau_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

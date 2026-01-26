@@ -1,0 +1,131 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|c:\\users\\math1\\desktop\\dev\\itau\\itau\\service\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|solutionrelative:itau\\service\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|c:\\users\\math1\\desktop\\dev\\itau\\itau\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|solutionrelative:itau\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|c:\\users\\math1\\desktop\\dev\\itau\\itau\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|solutionrelative:itau\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|c:\\users\\math1\\desktop\\dev\\itau\\itau\\model\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|solutionrelative:itau\\model\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|c:\\users\\math1\\desktop\\dev\\itau\\itau\\model\\transactionstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|solutionrelative:itau\\model\\transactionstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|c:\\users\\math1\\desktop\\dev\\itau\\itau\\model\\entities\\istatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67F0A7F2-D525-4ABA-8D7E-665A5AFC51FF}|Itau\\Itau.csproj|solutionrelative:itau\\model\\entities\\istatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 213,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Program.cs",
+              "RelativeDocumentMoniker": "Itau\\Program.cs",
+              "ToolTip": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Program.cs",
+              "RelativeToolTip": "Itau\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:18:48.249Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransactionsService.cs",
+              "DocumentMoniker": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Service\\TransactionsService.cs",
+              "RelativeDocumentMoniker": "Itau\\Service\\TransactionsService.cs",
+              "ToolTip": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Service\\TransactionsService.cs",
+              "RelativeToolTip": "Itau\\Service\\TransactionsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:43:48.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "Itau\\Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "Itau\\Controllers\\TransactionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:20:13.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IStatistic.cs",
+              "DocumentMoniker": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Model\\Entities\\IStatistic.cs",
+              "RelativeDocumentMoniker": "Itau\\Model\\Entities\\IStatistic.cs",
+              "ToolTip": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Model\\Entities\\IStatistic.cs",
+              "RelativeToolTip": "Itau\\Model\\Entities\\IStatistic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:05:28.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TransactionStatistic.cs",
+              "DocumentMoniker": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Model\\TransactionStatistic.cs",
+              "RelativeDocumentMoniker": "Itau\\Model\\TransactionStatistic.cs",
+              "ToolTip": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Model\\TransactionStatistic.cs",
+              "RelativeToolTip": "Itau\\Model\\TransactionStatistic.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T21:03:48.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Model\\Transaction.cs",
+              "RelativeDocumentMoniker": "Itau\\Model\\Transaction.cs",
+              "ToolTip": "C:\\Users\\math1\\Desktop\\Dev\\Itau\\Itau\\Model\\Transaction.cs",
+              "RelativeToolTip": "Itau\\Model\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-26T20:59:03.901Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
