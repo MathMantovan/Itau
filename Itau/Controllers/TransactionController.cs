@@ -1,30 +1,40 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Itau.Model;
+using Itau.Service;
+using Itau.Exception;
 
 namespace Itau.Controllers
 {
     [ApiController]
     public class TransactionController : ControllerBase
     {
+        private readonly TransactionsService _transactionsService;
         [HttpPost("/v1/transaction")]
         public IActionResult CreateTransaction([FromBody] decimal valor, [FromBody] DateTime transactionDate)
         {
-            var transaction = new Transaction(valor, transactionDate);
-            transactions.Add(transaction);
-
-            return Ok();
+            if (valor == null || transactionDate == null)
+                return BadRequest();
+            try
+            {
+                _transactionsService.CreateTransaction(valor, transactionDate);
+                return Created();
+            }
+            catch (TransactionsException ex)
+            {
+                return UnprocessableEntity(ex.Message);
+            }
         }
-
         [HttpGet("/v1/statistic")]
         public IActionResult GetStatisticSinceAPeriod()
         {
-            return View();
+            var statistics = _transactionsService.GetStatisticsFrom60Seconds();
+            return Ok(statistics);
         }
 
         [HttpDelete("/v1/transaction")]
         public IActionResult DeleteAllTransactions()
         {
-            return View();
+            _transactionsService.DeleteAllTransactions();
+            return Ok();
         }
     }
 }

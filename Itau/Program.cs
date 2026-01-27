@@ -1,3 +1,5 @@
+using Itau.Model;
+using Itau.Model.Entities;
 using System.Transactions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,10 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+builder.Services.AddSingleton<ITransactionStore, InMemoryTransactionStore>();
 
 var app = builder.Build();
-
-List<Transaction> transactions = new List<Transaction>();
 
 if (app.Environment.IsDevelopment())
 {

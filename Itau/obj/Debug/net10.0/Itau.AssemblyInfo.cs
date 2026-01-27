@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Itau")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c95aa216e4d59672110747176a390e686b932d6f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Itau")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Itau")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
