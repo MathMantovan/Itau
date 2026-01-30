@@ -2,8 +2,9 @@
 {
     public interface ITransactionStore
     {
-        public List<Transaction> GetAllTransactionsInTheLast60Seconds();
-        public void AddTransaction(Transaction transaction);
+        public IEnumerable<TransactionAccount> GetAllTransactionsInThePeriodInSeconds(int period);
+        public IEnumerable<TransactionAccount> GetAllTransactions();
+        public void AddTransaction(TransactionAccount transaction);
         public void ClearAllTransactions();
     }
 }

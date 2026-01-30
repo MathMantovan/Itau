@@ -1,10 +1,14 @@
 ﻿namespace Itau.Model
 {
-    public class Transaction
+    public class TransactionAccount
     {
         public decimal Value { get; set; }
         public DateTime TransactionDate { get; set; }
-        public Transaction(decimal value, DateTime transactionnDate)
+        public TransactionAccount()
+        {
+            
+        }
+        public TransactionAccount(decimal value, DateTime transactionnDate)
         {
             Value = value;
             TransactionDate = transactionnDate;

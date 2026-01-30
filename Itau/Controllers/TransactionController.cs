@@ -1,21 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Itau.Service;
 using Itau.Exception;
+using System.Transactions;
+using Itau.Model;
 
 namespace Itau.Controllers
 {
     [ApiController]
     public class TransactionController : ControllerBase
     {
-        private readonly TransactionsService _transactionsService;
-        [HttpPost("/v1/transaction")]
-        public IActionResult CreateTransaction([FromBody] decimal valor, [FromBody] DateTime transactionDate)
+        private readonly ITransactionsServices _transactionsService;
+        public TransactionController(ITransactionsServices transactionsService)
         {
-            if (valor == null || transactionDate == null)
+            _transactionsService = transactionsService;
+        }
+        [HttpPost("/v1/transaction")]
+        public IActionResult CreateTransaction([FromBody] TransactionAccount transaction)
+        {
+            if (transaction == null)
                 return BadRequest();
             try
             {
-                _transactionsService.CreateTransaction(valor, transactionDate);
+                _transactionsService.CreateTransaction(transaction);
                 return Created();
             }
             catch (TransactionsException ex)
@@ -23,10 +29,18 @@ namespace Itau.Controllers
                 return UnprocessableEntity(ex.Message);
             }
         }
-        [HttpGet("/v1/statistic")]
-        public IActionResult GetStatisticSinceAPeriod()
+
+        [HttpGet("/v1/alltransaction")]
+        public IActionResult GetAllTransactions()
         {
-            var statistics = _transactionsService.GetStatisticsFrom60Seconds();
+            var transactions = _transactionsService.GetAllTransactions();
+            return Ok(transactions);
+        }
+
+        [HttpGet("/v1/statistic/{period:int}")]
+        public IActionResult GetStatisticSinceAPeriod([FromRoute] int period)
+        {
+            var statistics = _transactionsService.GetStatisticsFromAPeriodInSeconds(period);
             return Ok(statistics);
         }
 

@@ -9,7 +9,7 @@ namespace Itau.Model
         public decimal Average { get; set; }
         public decimal Max { get; set; }
         public decimal Min { get; set; }
-        public TransactionStatistic(List<Transaction> AllTransactions)
+        public TransactionStatistic(IEnumerable<TransactionAccount> AllTransactions)
         {
             Count = CountAmountOfTransactions(AllTransactions);
             Sum = SumTransactionsValues(AllTransactions);
@@ -17,27 +17,27 @@ namespace Itau.Model
             Max = MaxTransactionValue(AllTransactions);
             Min = MinTransactionValue(AllTransactions);
         }
-        public int CountAmountOfTransactions(List<Transaction> AllTransactions)
+        public int CountAmountOfTransactions(IEnumerable<TransactionAccount> AllTransactions)
         {
             var Count = AllTransactions.Count();
             return Count;
         }
-        public decimal SumTransactionsValues(List<Transaction> AllTransactions)
+        public decimal SumTransactionsValues(IEnumerable<TransactionAccount> AllTransactions)
         {
             var Sum = AllTransactions.Sum(x => x.Value);
             return Sum;
         }
-        public decimal AverageTransactionsValues(List<Transaction> AllTransactions)
+        public decimal AverageTransactionsValues(IEnumerable<TransactionAccount> AllTransactions)
         {
             var Average = AllTransactions.Average(x => x.Value);
             return Average;
         }
-        public decimal MaxTransactionValue(List<Transaction> AllTransactions)
+        public decimal MaxTransactionValue(IEnumerable<TransactionAccount> AllTransactions)
         {
             var Max = AllTransactions.Max(x => x.Value);
             return Max;
         }
-        public decimal MinTransactionValue(List<Transaction> AllTransactions)
+        public decimal MinTransactionValue(IEnumerable<TransactionAccount> AllTransactions)
         {
             var Min = AllTransactions.Min(x => x.Value);
             return Min;

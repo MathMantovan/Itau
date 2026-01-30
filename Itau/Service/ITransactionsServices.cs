@@ -4,8 +4,9 @@ namespace Itau.Service
 {
     public interface ITransactionsServices
     {
-        public void CreateTransaction(decimal valor, DateTime transactionDate);
-        public TransactionStatistic GetStatisticsFrom60Seconds();
+        public void CreateTransaction(TransactionAccount transaction);
+        public TransactionStatistic GetStatisticsFromAPeriodInSeconds(int period);
+        public IEnumerable<TransactionAccount> GetAllTransactions();
         public void DeleteAllTransactions();
     }
 }

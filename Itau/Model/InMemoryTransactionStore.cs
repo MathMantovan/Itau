@@ -4,23 +4,28 @@ namespace Itau.Model
 {
     public class InMemoryTransactionStore : ITransactionStore
     {
-        private List<Transaction> StoreType { get; set; }
+        private List<TransactionAccount> StoreType { get; set; }
 
         public InMemoryTransactionStore()
         {
-            StoreType = new List<Transaction>();
+            StoreType = new List<TransactionAccount>();
         }
-        public List<Transaction> GetAllTransactionsInTheLast60Seconds()
+        public IEnumerable<TransactionAccount> GetAllTransactionsInThePeriodInSeconds(int period)
         {
-            return (List<Transaction>)StoreType.Where(x => x.TransactionDate >= DateTime.Now.AddSeconds(-60));
+            return StoreType.Where(x => x.TransactionDate >= DateTime.Now.AddSeconds(- period)).ToList();
         }
-        public void AddTransaction(Transaction transaction)
+        public void AddTransaction(TransactionAccount transaction)
         {
             StoreType.Add(transaction);
         }
         public void ClearAllTransactions()
         {
             StoreType.Clear();
+        }
+
+        public IEnumerable<TransactionAccount> GetAllTransactions()
+        {
+            return StoreType;
         }
     }
 }
